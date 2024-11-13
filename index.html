@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Guru - GMP & Allotment Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Added Poppins font -->
+    <style>
+        /* Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+            background: linear-gradient(135deg, #002330, #175976);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 180px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 30px;
+            animation: slideInDown 1s ease;
+        }
+
+        /* Headline & Description */
+        .app-name {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #ffffff;
+            animation: fadeIn 1.5s ease;
+        }
+        .description {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #d1f4fa;
+        }
+
+        /* Features Section */
+        .features {
+            border: 1px solid #659aad; 
+            border-radius: 20px;
+            padding: 20px;
+            margin: 30px 0;
+            animation: fadeIn 2s ease;
+        }
+        .features h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .feature-item {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        /* Download Buttons */
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            height: 50px;
+            flex-wrap: wrap;
+        }
+        .download-buttons a {
+            display: inline-block;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+        .download-buttons a:hover {
+            transform: scale(1.1);
+        }
+        .download-buttons img {
+            width: 150px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        /* Links */
+        .links {
+            margin-top: 40px;
+            font-size: 1em;
+            color: #ffffff;
+        }
+        .links a {
+            color: #ffffff;
+            opacity: 0.8;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #80deea;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #d1f4fa;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="logo.png" alt="IPO Guru Logo" class="logo">
+
+        <!-- App Name -->
+        <h1 class="app-name">IPO Guru</h1>
+
+        <!-- Description -->
+        <p class="description">Stay informed and up-to-date with IPO GMP & Allotment statuses. IPO Guru provides the latest info, including Grey Market Premiums, allotment updates, and a comprehensive IPO schedule!</p>
+
+        <!-- Features Section -->
+        <div class="features">
+            <h2>Key Features</h2>
+            <p class="feature-item">📊 Real-time GMP updates and insights</p>
+            <p class="feature-item">🔍 Easy allotment checks for all recent IPOs</p>
+            <p class="feature-item">📅 Get notified on upcoming IPOs and allotment dates</p>
+            <p class="feature-item">🚀 Fast and user-friendly interface</p>
+        </div>
+
+        <!-- Download Buttons -->
+        <div class="download-buttons">
+            <a href="https://play.google.com/store/apps" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+            </a>
+            <a href="https://apps.apple.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+            </a>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+            <a href="privacy_policy.html">Privacy Policy</a> |
+            <a href="terms_and_conditions.html">Terms and Conditions</a> |
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 TapX Solutions. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
