@@ -28,54 +28,55 @@
             left: 0;
             right: 0;
             background: linear-gradient(135deg, #002330, #175976);
-            padding: 20px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: start;
             color: #ffffff;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
         }
 
         .logo {
-            font-size: 1.8em;
+            display: flex;
+            align-items: start;
+            font-size: 1.5em;
             font-weight: 600;
             color: #ffffff;
-            display: flex;
-            align-items: center;
         }
 
         .logo img {
-            width: 50px; /* Logo size */
+            width: 40px; /* Responsive logo size */
             height: auto;
+            align-items: start;
             border-radius: 10px;
             margin-right: 10px; /* Space between logo and text */
         }
 
         .privacy-title {
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: 600;
+            text-align: right;
         }
 
         /* Main Content Styling */
         .container {
-            margin: 20px;
-            padding: 20px;
+            max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
             background: #ffffff;
         }
 
-        h1, h2 {
-            color: #175976; /* Primary color */
-        }
-
         h1 {
-            font-size: 2em;
+            font-size: 1.8em;
+            color: #175976; /* Primary color */
             margin-bottom: 20px;
         }
 
         h2 {
             font-size: 1.5em;
+            color: #175976;
             margin-top: 20px;
             margin-bottom: 10px;
         }
@@ -89,7 +90,7 @@
 
         ul {
             list-style-type: disc;
-            margin-left: 30px;
+            margin-left: 20px;
             margin-bottom: 20px;
         }
 
@@ -110,10 +111,57 @@
             color: #333;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1em;
+                padding: 15px;
+            }
+            .logo img {
+                width: 35px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p {
+                font-size: 0.95em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+            .logo {
+                font-size: 1.3em;
+            }
+            .privacy-title {
+                font-size: 1em;
+                margin-top: 5px;
+            }
+            h1 {
+                font-size: 1.4em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .container {
+                padding: 10px;
+            }
+            footer {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -123,11 +171,11 @@
             <img src="logo.png" alt="IPO Guru Logo"> <!-- Local logo image -->
             IPO Guru
         </div>
-        <div class="privacy-title">Terms and Conditions</div>
+       
     </header>
 
     <div class="container">
-        <h1>Terms and Conditions for IPO Guru</h1>
+        <h1>Terms and Conditions</h1>
 
         <h2>1. Access to the App</h2>
         <p><strong>Subject to These Terms:</strong><br> IPO Guru provides you with a limited, non-transferable, non-exclusive, and revocable license to access and use the App solely for personal, non-commercial purposes.</p>
